@@ -413,14 +413,18 @@
 
 /* Estilos adicionales para la sección de educación */
 .educación {
-  background: #5a0202;  /* Gradiente vertical (simétrico) */
+  background: linear-gradient(to top, #1a1a1a, #5a0202);
   color: white;
   padding: 40px;
   font-family: Arial, sans-serif;
 }
 
 .span2 {
-  color: rgb(248, 248, 248);
+  color: rgb(255, 255, 255);
+}
+
+.span3 {
+  color: rgb(143, 9, 9);
 }
 
 /* Media query para pantallas más pequeñas (por ejemplo, móviles) */
@@ -487,11 +491,12 @@
 }
 
 .experiencia {
-  background: linear-gradient(to top, #1a1a1a, #5a0202);
+  background: linear-gradient(to bottom, #1a1a1a, #000000);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 60px 10%;
+  margin-bottom: 100px;
 }
 
 .experiencia .title {
@@ -563,81 +568,22 @@
   }
 }
 
-.contact {
-  background: linear-gradient(to bottom, #1a1a1a, #000000);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact-form {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 5px 5px 20px rgba(255, 90, 61, 0.3);
-  width: 100%;
-  max-width: 600px;
+.footer {
+  background: linear-gradient(to top, #1a1a1a, #000000);
   color: white;
-  transition: all 0.3s ease-in-out;
-}
-
-.contact-form:hover {
-  transform: translateY(-5px);
-  box-shadow: 5px 10px 25px rgba(255, 99, 71, 0.5);
-}
-
-.contact-form h2 {
-  margin-bottom: 20px;
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: brown;
   text-align: center;
+  padding: 40px 10%;
+  font-size: 1.4rem;
+  line-height: 1.6;
 }
 
-.contact-form p {
-  font-size: 1.6rem;
-  margin-bottom: 20px;
-  text-align: center;
+.footer .footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.9;
 }
 
-.contact-form label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: white;
-  font-size: 1.6rem;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 2px solid brown;
-  border-radius: 4px;
-  font-size: 1.6rem;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: white;
-}
-
-.contact-form textarea {
-  resize: vertical;
-  height: 100px;
-}
-
-.contact-form button {
-  background-color: brown;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  font-size: 1.6rem;
-  cursor: pointer;
-  width: 100%;
-  transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #8b0000;
+.footer .footer-content p {
+  margin-bottom: 10px;
+  font-size: 25px;
 }

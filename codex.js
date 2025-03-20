@@ -27,28 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Botón "Contáctame" lleva al apartado de contacto
-    if (contactButton) {
-        contactButton.addEventListener("click", function (event) {
-            event.preventDefault();
-            const contactSection = document.getElementById("contact");
-            
-            if (contactSection) {
-                window.scrollTo({
-                    top: contactSection.offsetTop - 50,
-                    behavior: "smooth"
-                });
-            }
-        });
-    }
-
-    // Botón "Descargar Curriculum"
-    if (cvButton) {
-        cvButton.addEventListener("click", function (event) {
-            event.preventDefault();
-            window.location.href = "cv.pdf"; // Asegúrate de que el archivo esté en la misma carpeta
-        });
-    }
+    
 
     // Cambiar clase activa en el header al desplazarse
     window.addEventListener("scroll", function () {

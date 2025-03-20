@@ -20,7 +20,6 @@
       <a href="#skills">Habilidades</a>
       <a href="#educación">Educación</a>
       <a href="#experiencia">Experiencia</a>
-      <a href="#contact">Contacto</a>
     </nav>
     </nav>
     <div>
@@ -59,14 +58,13 @@
       </p>
       <div class="social-icons">
         <a href="https://www.linkedin.com/in/mariolimonesbernabé/"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#"><i class="fa-brands fa-github"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/MarioLimones"><i class="fa-brands fa-github"></i></a>
       </div>
       <div class="button">
-        <a href="#" class="btn">Descargar Curriculum</a>
+        <a href="cv.pdf" download="Mario_Limones_CV.pdf" class="btn">Descargar Curriculum</a>
       </div>
       <div class="button">
-      <a href="#contact" class="btn">Contáctame</a>
+        <a href="mailto:mario.limobe@gmail.com?subject=Contacto%20desde%20tu%20portafolio" class="btn">Contáctame</a>
     </div>
     </div>
   </section>
@@ -156,7 +154,7 @@
 
   <!-- Apartado de Experiencia-->
    <section class="experiencia" id="experiencia">
-    <div class="title"><span class="span2">Mi Experiencia</span></div>
+    <div class="title"><span class="span3">Mi Experiencia</span></div>
     <div class="content">
         <div class="text">
           <p data-aos="fade-right">Tuve la valiosa oportunidad de formarme como montador en una de las empresas más prestigiosas del sector aeronáutico, Airbus, donde trabajé durante nueve meses como alumno en prácticas. Durante este tiempo, estuve cuatro meses y medio en la planta de Tablada y otros cuatro meses y medio en el Aeropuerto de Sevilla.
@@ -172,60 +170,10 @@
     </div>
    </section>
     
-
-  <!-- Apartado de "Contacto" -->
-  <section class="contact" id="contact">
-    <div class="contact-form">
-        <h2>Contáctame</h2>
-        <p>Estoy disponible para proyectos de freelance o puestos de trabajo. Si tienes alguna pregunta, no dudes en utilizar este formulario para notificarme.</p>
-        <form id="contactForm">
-            <label for="name">Nombre</label>
-            <input type="text" id="name" placeholder="Tu nombre" required>
-
-            <label for="email">Tu Email</label>
-            <input type="email" id="email" placeholder="correo@ejemplo.com" required>
-
-            <label for="message">Mensaje</label>
-            <textarea id="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
-
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
-</section>
-
-<script>
-    document.getElementById('contactForm').addEventListener('submit', function (event) {
-        event.preventDefault();
-
-        const formData = {
-            nombre: document.getElementById('name').value,
-            email: document.getElementById('email').value,
-            mensaje: document.getElementById('message').value,
-        };
-
-        fetch('http://localhost:3000/enviar-correo', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData),
-        })
-        .then(response => response.text())
-        .then(result => {
-            alert(result);
-        })
-        .catch(error => {
-            alert('Error: ' + error.message);
-        });
-    });
-</script>
-
   <!-- Pie de página-->
-  <footer>
-    <div class="text">
-      <span>Creado por
-        <a href="#">Mario Limones Bernabé</a>
-      </span>
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Mario Limones Bernabé. Estudiante de 1º.</p>
     </div>
   </footer>
   <script src="codex.js"></script>
