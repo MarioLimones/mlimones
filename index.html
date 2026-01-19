@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css">
+  <title>Portafolio</title>
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo">Mario Limones Bernabé</a>
+    <nav>
+      <a href="#home" class="active">Inicio</a>
+      <a href="#skills">Habilidades</a>
+      <a href="#educación">Educación</a>
+      <a href="#experiencia">Experiencia</a>
+    </nav>
+    </nav>
+    <div>
+      <i class="fa-solid fa-bars hamburg" on click="hamburg()"></i>
+    </div>
+  </header>
+
+  <!-- Sección HOME -->
+  <section class="home" id="home">
+    <div class="home-img">
+      <img src="imagenes\img.jpeg" alt="Foto de Mario" />
+    </div>
+    <div class="home-content">
+      <h1>Hola, soy <span>Mario</span></h1>
+      <h3 class="escribiendo-texto">Soy un <span>Desarrollador novel de Aplicaciones Multiplataforma</span></h3>
+      <p>
+        ¡Hola! Soy un joven apasionado por la programación y actualmente me
+        encuentro desarrollándome como programador en
+        <a href="https://www.corenetworks.es">Core Networks</a>. A pesar de
+        haber comenzado este año en el mundo de la programación, mi interés
+        por la tecnología y la innovación ha sido siempre una constante en
+        mi vida.
+        <br /><br />
+        Además de mi incipiente carrera como programador, tengo un grado
+        medio en aeronáutica como montador, una formación que me ha
+        permitido adquirir una visión técnica y detallista, y que me ha
+        ayudado a desarrollar habilidades prácticas y un enfoque en la
+        calidad. Tengo una carta de recomendación firmada y sellada que
+        respalda mi desempeño y dedicación durante mi formación. Mi dominio
+        del inglés B1 me ha permitido abrirme a nuevas oportunidades, tanto
+        en proyectos internacionales como en la mejora continua de mis
+        conocimientos técnicos.
+        <br /><br />
+        Con la programación como mi principal pasión, estoy siempre en busca
+        de nuevos retos y oportunidades para seguir creciendo y aprendiendo.
+      </p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/mariolimonesbernabé/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/MarioLimones"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <div class="button">
+        <a href="cv.pdf" download="Mario_Limones_CV.pdf" class="btn">Descargar Curriculum</a>
+      </div>
+      <div class="button">
+        <a href="mailto:mario.limobe@gmail.com?subject=Contacto%20desde%20tu%20portafolio" class="btn">Contáctame</a>
+    </div>
+    </div>
+  </section>
+
+  <!-- Parte de "Habilidades"-->
+<section class="skills-split" id="skills">
+  <div class="skills-split-container">
+
+    <!-- Columna izquierda: texto -->
+    <div class="skills-left">
+      <h2 class="skills-left-title">Perfil profesional</h2>
+
+<h3 class="skills-left-subtitle">
+  Desarrollo de <span class="skills-accent">Software</span> y Aplicaciones
+</h3>
+<p class="skills-left-text">
+  Soy desarrollador en formación con un enfoque principal en el desarrollo de software y la creación
+  de aplicaciones funcionales y mantenibles. Trabajo con Java y Spring Boot en el desarrollo backend,
+  creando APIs REST y estructurando la lógica de negocio siguiendo principios de programación orientada
+  a objetos. Complemento este trabajo con el desarrollo de interfaces utilizando tecnologías web
+  modernas como JavaScript, React y TypeScript.
+</p>
+
+<h3 class="skills-left-subtitle">Backend, Frontend y Bases de Datos</h3>
+<p class="skills-left-text">
+  Desarrollo aplicaciones completas integrando backend, frontend y bases de datos. Utilizo MySQL
+  para el diseño y gestión de bases de datos relacionales, y tecnologías como Node.js y Python
+  para el desarrollo de servicios y tareas de apoyo. En el ámbito frontend, trabajo con HTML, CSS
+  y frameworks modernos, manteniendo siempre una visión orientada a la calidad del software.
+</p>
+
+<h3 class="skills-left-subtitle">Herramientas, Entornos y Metodología</h3>
+<p class="skills-left-text">
+  Trabajo habitualmente con control de versiones mediante Git y utilizo Docker para la gestión de
+  entornos de desarrollo. Documento y pruebo APIs REST con Swagger, aplicando buenas prácticas de
+  desarrollo de software. Mantengo una actitud constante de aprendizaje y mejora continua, con
+  interés en crecer profesionalmente dentro del ámbito del desarrollo de software.
+</p>
+    </div>
+
+    <!-- Columna derecha: cajas de tecnologías -->
+    <div class="skills-right">
+
+      <div class="skills-card">
+        <h3 class="skills-card-title">Frontend</h3>
+        <div class="skills-icons">
+          <div class="skill-icon">
+            <img src="imagenes/html.png" alt="HTML">
+            <span>HTML5</span>
+          </div>
+          <div class="skill-icon">
+            <img src="imagenes/css.png" alt="CSS">
+            <span>CSS3</span>
+          </div>
+          <div class="skill-icon">
+            <img src="imagenes/javascript.png" alt="JavaScript">
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-icon">
+            <img src="imagenes/React-icon.svg.png" alt="React">
+            <span>React</span>
+          </div>
+          <!-- Si no usas Angular, lo quitas -->
+          <div class="skill-icon">
+            <img src="imagenes/ts.png" alt="TypeScript">
+            <span>TypeScript</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-card">
+        <h3 class="skills-card-title">Backend</h3>
+        <div class="skills-icons">
+          <div class="skill-icon">
+            <img src="imagenes/pngegg.png" alt="Java">
+            <span>Java</span>
+          </div>
+          <div class="skill-icon">
+            <img src="imagenes/Spring_Boot.svg.png" alt="Spring Boot">
+            <span>Spring Boot</span>
+          </div>
+          <div class="skill-icon">
+            <img src="imagenes/React-icon.svg.png" alt="React Native">
+            <span>React Native</span>
+          </div>
+          <div class="skill-icon">
+            <img src="imagenes/mysql.png" alt="MySQL">
+            <span>MySQL</span>
+          </div>
+          <div class="skill-icon">
+            <img src="imagenes/Python-logo-notext.svg.png" alt="Python">
+            <span>Python</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-card">
+        <h3 class="skills-card-title">Herramientas</h3>
+        <div class="skills-icons">
+          <div class="skill-icon">
+            <img src="imagenes/git.png" alt="Git">
+            <span>Git</span>
+          </div>
+          <div class="skill-icon">
+            <img src="imagenes/docker.png" alt="Docker">
+            <span>Docker</span>
+          </div>
+          <div class="skill-icon">
+            <img src="imagenes/Swagger-logo.png" alt="Swagger">
+            <span>Swagger</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Apartado de Educación-->
+  <section class="educación" id="educación">
+    <div class="title"> <span class="span2">MI EDUCACIÓN</span></div>
+    <div class="content">
+      <div class="text">
+        <p data-aos="fade-right">Después de finalizar la Educación Secundaria Obligatoria (ESO), decidí orientar mi
+          formación hacia el sector aeronáutico, ingresando en un grado medio de Montaje de Estructuras Aeronáuticas en
+          mi pueblo, San José de la Rinconada. Durante este período, adquirí conocimientos técnicos sobre ensamblaje de
+          componentes aeronáuticos, interpretación de planos y normativas del sector, además de desarrollar habilidades
+          prácticas en el manejo de herramientas y materiales especializados. Mi desempeño en esta etapa fue reconocido
+          con una carta de recomendación firmada y sellada, que avala mi formación y aptitudes en el ámbito aeronáutico.
+
+          Sin embargo, con el tiempo descubrí una nueva pasión por el desarrollo de software, lo que me llevó a dar un
+          giro en mi trayectoria profesional. Decidí adentrarme en el mundo de la programación y comencé a formarme en
+          esta área, combinando estudios y práctica para desarrollar mis habilidades en este campo. Esta decisión me
+          llevó a unirme a Core Networks como programador, donde actualmente sigo aprendiendo y adquiriendo experiencia
+          en entornos reales de desarrollo.
+
+          Esta evolución en mi camino profesional refleja mi capacidad de adaptación y mi interés por el aprendizaje
+          continuo, permitiéndome ampliar mis conocimientos y competencias en distintos sectores.
+        </p>
+      </div>
+      <div class="gallery-container">
+        <div class = "foto1"><img id="airbus" src="imagenes\sanJose.jpg" alt="Imagen de galería">
+        <h1>IES SAN JOSE DE LA RINCONADA</h1>
+        </div>
+        <div class = "foto2"><img id="airbus" src="imagenes\airbus2.jpeg" alt="Imagen de galería"></div>
+        <div class = "foto3"><img id="airbus" src="imagenes\core.jpg" alt="Imagen de galería"></div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Apartado de Experiencia-->
+   <section class="experiencia" id="experiencia">
+    <div class="title"><span class="span3">Mi Experiencia</span></div>
+    <div class="content">
+        <div class="text">
+          <p data-aos="fade-right">Tuve la valiosa oportunidad de formarme como montador en una de las empresas más prestigiosas del sector aeronáutico, Airbus, donde trabajé durante nueve meses como alumno en prácticas. Durante este tiempo, estuve cuatro meses y medio en la planta de Tablada y otros cuatro meses y medio en el Aeropuerto de Sevilla.
+
+            <br /><br />En el Aeropuerto, participé con gran efectividad en la producción del avión C295, mientras que en Tablada trabajé en el ensamblaje del estabilizador del FALCON 8X, adquiriendo experiencia en procesos técnicos de alta precisión. <br /><br />Esta etapa me permitió desarrollar habilidades clave como la organización, el trabajo en equipo y la resolución de problemas en entornos de alta exigencia.
+            
+            Mi desempeño fue reconocido con una carta de recomendación firmada y sellada por Airbus, lo que respalda mi compromiso, dedicación y capacidad para aportar valor en un entorno profesional exigente.<br /><br /> Aunque actualmente mi trayectoria se ha orientado hacia la programación, esta experiencia me proporcionó una base sólida en disciplina, atención al detalle y trabajo colaborativo, habilidades que hoy aplico en mi nueva carrera.</p>
+        </div>
+        <div class="gallery-container">
+          <div class = "foto1"><img id="airbus" src="imagenes\c295.jpg" alt="Imagen de galería"></div>
+          <div class = "foto2"><img id="airbus" src="imagenes\airbusCompañeros.jpeg" alt="Imagen de galería"></div>
+        </div>
+    </div>
+   </section>
+    
+  <!-- Pie de página-->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2026 Mario Limones Bernabé. Estudiante de 2º.</p>
+    </div>
+  </footer>
+  <script src="codex.js"></script>
+</body>
+
+</html>
+
+</html>
